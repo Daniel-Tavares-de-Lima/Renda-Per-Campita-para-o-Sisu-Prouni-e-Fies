@@ -1,8 +1,26 @@
 #Perguntas
 
-pergunta = int(input("Quantas pessoas moram com você? "))
-pergunta2 = int(input("Dessas {} pessoas, quantas pessoas ganham salário?".format(pergunta)))
-pergunta3 = int(input("OK, agora, informe o (TOTAL) que essas {} recebem! R$ ".format(pergunta2)))
+pergunta = (input("Quantas pessoas moram com você? "))
+
+if pergunta.isdigit():
+     pergunta = int(pergunta)
+     
+     
+else:
+     print("Por favor digite em números")
+     
+
+
+ 
+
+#hhhh
+if pergunta == 1:
+     pergunta3 = int(input("OK, agora, informe o (TOTAL) que essa pessoa recebe! R$" ))
+
+else:
+     pergunta2 = int(input("Dessas {} pessoas, quantas pessoas ganham salário?".format(pergunta)))
+     pergunta3 = int(input("OK, agora, informe o (TOTAL) que essas {} pessoas recebe R$" .format(pergunta2)))
+
 
 #calculo
 salario_minimo = 1100
